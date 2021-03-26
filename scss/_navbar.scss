@@ -1,0 +1,81 @@
+
+
+
+#header {
+    // varibale
+    $icon_size: 22;
+    $brand_font: 25;
+
+    background-color: $red;
+
+    // container
+    .container {
+        // style
+        @extend %container;
+        @include padX(10px);
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 50px 60px;
+        grid-template-areas:
+            "social social"
+            "brand menu";
+        align-items: center;
+        padding-bottom: 20px;
+        // brand style
+        .brand {
+            text-align: left;
+            grid-area: brand;
+            // heading
+            h1 {
+                font-size: $brand_font + px;
+                font-weight: 500;
+                text-transform: uppercase;
+                display: inline;
+                font-size: $brand_font + px;
+                span {
+                    font-weight: bold;
+                }
+            }
+            i {
+                font-size: $brand_font + 3 + px;
+                margin-right: 8px;
+            }
+           h1, i {
+                color: white;
+            }
+        }
+        // social list
+        .social {
+            grid-area: social;
+            max-width: 200px;
+            width: 100%;
+            @include center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            li {
+                list-style: none;
+                width: 100% / 4;
+                cursor: pointer;
+
+                i {
+                    color: white;
+                    font-size: $icon_size + px;
+                }
+            }
+        }
+        // nav
+        .menu_btn {
+            grid-area: menu;
+            text-align: right;
+            i {
+                color: white;
+                font-size: 32px;
+                padding: 5px;
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,3 +1,102 @@
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.ttf");
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato-LightItalic";
+  src: url("../fonts/Lato-LightItalic.ttf");
+}
+#header .container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.para {
+  font-family: "Lato-Regular";
+}
+
+.heading {
+  font-family: "Lato-Bold";
+}
+
+#header {
+  background-color: #ce0000;
+}
+#header .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 50px 60px;
+  grid-template-areas: "social social" "brand menu";
+  align-items: center;
+  padding-bottom: 20px;
+}
+#header .container .brand {
+  text-align: left;
+  grid-area: brand;
+}
+#header .container .brand h1 {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 25px;
+}
+#header .container .brand h1 span {
+  font-weight: bold;
+}
+#header .container .brand i {
+  font-size: 28px;
+  margin-right: 8px;
+}
+#header .container .brand h1, #header .container .brand i {
+  color: white;
+}
+#header .container .social {
+  grid-area: social;
+  max-width: 200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#header .container .social li {
+  list-style: none;
+  width: 100%/4;
+  cursor: pointer;
+}
+#header .container .social li i {
+  color: white;
+  font-size: 22px;
+}
+#header .container .menu_btn {
+  grid-area: menu;
+  text-align: right;
+}
+#header .container .menu_btn i {
+  color: white;
+  font-size: 32px;
+  padding: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /*# sourceMappingURL=style.css.map */
