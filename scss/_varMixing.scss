@@ -25,12 +25,6 @@ $not_white: #858585;
 
 
 
-// container
-%container {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 
 
@@ -61,8 +55,8 @@ $lg: "1200px";
 $xl: "1400px";
 $xxl: "1920px";
 
-@mixin resp() {
-    @media only screen and (min-width: $value) {
+@mixin resp($width) {
+    @media only screen and (min-width: $width) {
         @content;
     }
 }
@@ -70,4 +64,40 @@ $xxl: "1920px";
 @mixin center {
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+
+// container
+%container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    //extra small 
+    @include resp($x_sm) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    // small 
+    @include resp($sm) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    // medium 
+    @include resp($md) {
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+        @include center;
+    }
+    //extra  large 
+    @include resp($xl) {
+        width: 85%;
+    }
+    // extra extra large 
+    @include resp($xxl) {
+        max-width: 1620px;
+    }
+    
 }
