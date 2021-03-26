@@ -4,6 +4,7 @@
 // responsive nav btn cross animation
 // ---------------------------------------
 const getNavBtn = document.querySelector(".menu_btn i");
+const getNav = document.querySelector('.container .nav');
 
 // add remove class
 const btnHandler = () => {
@@ -16,4 +17,16 @@ const btnHandler = () => {
     }
 };
 
-getNavBtn.addEventListener('click', btnHandler);
+
+
+getNavBtn.addEventListener('click', () => {
+    btnHandler();
+    getNav.classList.toggle('active');
+});
+
+
+
+// navbar handler 
+
+
+
