@@ -27,13 +27,9 @@
             grid-template-rows: 75px;
             grid-template-areas: "brand social menu";
         }
-        // extra large
-        @include resp($lg) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: "brand social";
-            justify-content: space-between;
+        @include resp ($lg) {
+            grid-template-columns: 1fr 1fr 1fr;
         }
-
         // brand style
         .brand {
             text-decoration: none;
@@ -92,7 +88,7 @@
             @include resp($lg) {
                 margin-left: 0;
                 margin-right: 0;
-                justify-self: end;
+                justify-self: center;
             }
 
             li {
@@ -110,10 +106,6 @@
         .menu_btn {
             grid-area: menu;
             text-align: right;
-            // responsive
-            @include resp($lg) {
-                display: none;
-            }
             i {
                 color: white;
                 font-size: 32px;

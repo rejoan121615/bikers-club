@@ -23,15 +23,6 @@ $para_i: "Lato-LightItalic";
 $red: #ce0000;
 $not_white: #858585;
 
-
-
-
-
-
-.para {
-    font-family: $para;
-}
-
 .heading {
     font-family: $head;
 }
@@ -53,7 +44,7 @@ $sm: "768px";
 $md: "992px";
 $lg: "1200px";
 $xl: "1400px";
-$xxl: "1920px";
+$xxl: "1900px";
 
 @mixin resp($width) {
     @media only screen and (min-width: $width) {
@@ -66,47 +57,87 @@ $xxl: "1920px";
     margin-right: auto;
 }
 
-
-
-
 // container
 %container {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    //extra small 
+    //extra small
     @include resp($x_sm) {
         padding-left: 30px;
         padding-right: 30px;
     }
-    // small 
+    // small
     @include resp($sm) {
         padding-left: 40px;
         padding-right: 40px;
     }
-    // medium 
+    // medium
     @include resp($md) {
         width: 90%;
         padding-left: 0px;
         padding-right: 0px;
         @include center;
     }
-    //extra  large 
+    //extra  large
     @include resp($xl) {
         width: 85%;
     }
-    // extra extra large 
+    // extra extra large
     @include resp($xxl) {
         max-width: 1620px;
     }
-    
 }
 
+.container {
+    @extend %container;
+}
 
-// text 
+// text
 %text {
     font-family: $para;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
 }
+
+// btn
+%btn {
+    font-family: $head;
+    font-size: 20px;
+    @include padX(20px);
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: $red;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        background-color: darken($color: $red, $amount: 20);
+        transition: background-color 0.5s;
+    }
+}
+
+.btn {
+    @extend %btn;
+}
+
+// para
+.para {
+    $font_size: 18;
+
+    font-family: $para;
+    font-size: $font_size + px;
+    line-height: $font_size + 5 + px;
+    color: white;
+    text-align: center;
+
+    @include resp($md) {
+        font-size: $font_size + 2 + px;
+        line-height: $font_size + 7 + px;
+    }
+}
+
+
+// btn 

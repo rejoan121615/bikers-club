@@ -14,33 +14,29 @@
   font-family: "Lato-LightItalic";
   src: url("../fonts/Lato-LightItalic.ttf");
 }
-.para {
-  font-family: "Lato-Regular";
-}
-
 .heading {
   font-family: "Lato-Bold";
 }
 
-#header .container {
+#header .container, .container {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
 }
 @media only screen and (min-width: 576px) {
-  #header .container {
+  #header .container, .container {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 @media only screen and (min-width: 768px) {
-  #header .container {
+  #header .container, .container {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media only screen and (min-width: 992px) {
-  #header .container {
+  #header .container, .container {
     width: 90%;
     padding-left: 0px;
     padding-right: 0px;
@@ -49,21 +45,53 @@
   }
 }
 @media only screen and (min-width: 1400px) {
-  #header .container {
+  #header .container, .container {
     width: 85%;
   }
 }
-@media only screen and (min-width: 1920px) {
-  #header .container {
+@media only screen and (min-width: 1900px) {
+  #header .container, .container {
     max-width: 1620px;
   }
 }
 
-#main_section .container .nav .nav_wrapper a {
+#main_section .nav .nav_wrapper a {
   font-family: "Lato-Regular";
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.btn {
+  font-family: "Lato-Bold";
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #ce0000;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #680000;
+  transition: background-color 0.5s;
+}
+
+.para {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .para {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 #header {
@@ -88,9 +116,7 @@
 }
 @media only screen and (min-width: 1200px) {
   #header .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "brand social";
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 #header .container .brand {
@@ -147,7 +173,7 @@
   #header .container .social {
     margin-left: 0;
     margin-right: 0;
-    justify-self: end;
+    justify-self: center;
   }
 }
 #header .container .social li {
@@ -163,11 +189,6 @@
   grid-area: menu;
   text-align: right;
 }
-@media only screen and (min-width: 1200px) {
-  #header .container .menu_btn {
-    display: none;
-  }
-}
 #header .container .menu_btn i {
   color: white;
   font-size: 32px;
@@ -179,16 +200,38 @@
 #main_section {
   background: transparent url("../img/main_bg.png") no-repeat center center;
   background-size: cover;
-  height: 550px;
+  height: 700px;
 }
-#main_section .container .nav {
+@media only screen and (min-width: 1200px) {
+  #main_section {
+    height: 800px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #main_section {
+    height: 800px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  #main_section {
+    height: 900px;
+  }
+}
+#main_section .nav {
   width: 100%;
   height: 0;
   overflow: hidden;
   background-color: #00000050;
   transition: all 0.5s;
 }
-#main_section .container .nav .nav_wrapper {
+@media only screen and (min-width: 1200px) {
+  #main_section .nav {
+    max-width: 500px;
+    width: 0px;
+    transition: width 0.5s;
+  }
+}
+#main_section .nav .nav_wrapper {
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -196,17 +239,153 @@
   justify-content: center;
   padding-top: 40px;
 }
-#main_section .container .nav .nav_wrapper a {
+@media only screen and (min-width: 1200px) {
+  #main_section .nav .nav_wrapper {
+    margin-right: 90px;
+    padding-top: 55px;
+  }
+}
+#main_section .nav .nav_wrapper a {
   font-size: 18;
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
 }
-#main_section .container .active {
-  width: 100%;
+@media only screen and (min-width: 1200px) {
+  #main_section .nav .nav_wrapper a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    transition: border 0.8s;
+  }
+  #main_section .nav .nav_wrapper a:hover {
+    display: inline-block;
+    border-bottom: 1px solid #ce0000;
+  }
+}
+#main_section .active {
   height: 100vh;
 }
+@media only screen and (min-width: 1200px) {
+  #main_section .active {
+    margin-right: 120px;
+    width: 100%;
+  }
+}
+#main_section main {
+  padding-top: 100px;
+  text-align: center;
+  padding-top: 150px;
+}
+@media only screen and (min-width: 1200px) {
+  #main_section main {
+    text-align: left;
+    padding-top: 180px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #main_section main {
+    padding-top: 210px;
+  }
+}
+#main_section main .sm_title {
+  font-family: "Lato-Regular";
+  font-size: 30px;
+}
+@media only screen and (min-width: 768px) {
+  #main_section main .sm_title {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #main_section main .sm_title {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  #main_section main .sm_title {
+    font-size: 45px;
+  }
+}
+#main_section main .main_title {
+  font-family: "Lato-Black";
+  font-size: 43px;
+  margin-top: 15px;
+}
+@media only screen and (min-width: 576px) {
+  #main_section main .main_title {
+    font-size: 70px;
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #main_section main .main_title {
+    font-size: 85px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #main_section main .main_title {
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #main_section main .main_title {
+    font-size: 115px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  #main_section main .main_title {
+    font-size: 125px;
+  }
+}
+#main_section main .para {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  #main_section main .para {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #main_section main .para {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #main_section main .para {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+#main_section main .sm_title,
+#main_section main .main_title {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+  #main_section main .sm_title,
+#main_section main .main_title {
+    text-align: left;
+  }
+}
+#main_section main .btn {
+  margin-top: 50px;
+}
+@media only screen and (min-width: 1400px) {
+  #main_section main .btn {
+    margin-top: 80px;
+  }
+}
 
+@media only screen and (min-width: 1200px) {
+  .active_main {
+    display: flex;
+  }
+}
 * {
   margin: 0;
   padding: 0;
