@@ -91,6 +91,8 @@
     // slider bottom container
     .slider_bottom_sec {
         margin-top: 75px;
+        padding-top: 0px;
+        padding-bottom: 0px;
         // responsive 
         @include resp ($md) {
             margin-top: 100px;

@@ -538,6 +538,8 @@ p, h1, h2, h3, h4, h5, h6, .heading {
 }
 #slider .slider_bottom_sec {
   margin-top: 75px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 @media only screen and (min-width: 992px) {
   #slider .slider_bottom_sec {
