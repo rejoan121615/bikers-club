@@ -80,6 +80,24 @@
   transition: background-color 0.5s;
 }
 
+.border_btn {
+  font-family: "Lato-Regular";
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  background-color: #ce0000;
+  border: 2.5px solid white;
+  padding: 13px 16px;
+  display: inline-block;
+  letter-spacing: 0.8px;
+  transition: background-color 0.8s, border-color 0.8s, font-weight 0.9s;
+}
+.border_btn:hover {
+  background-color: #820000;
+  border-color: #820000;
+  font-weight: bold;
+}
+
 .para {
   font-family: "Lato-Regular";
   font-size: 18px;
@@ -385,6 +403,9 @@
   .active_main {
     display: flex;
   }
+}
+#slider {
+  background-color: #1b1b1b;
 }
 * {
   margin: 0;

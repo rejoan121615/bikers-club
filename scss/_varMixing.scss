@@ -22,6 +22,7 @@ $para_i: "Lato-LightItalic";
 // color
 $red: #ce0000;
 $not_white: #858585;
+$not_black: #1b1b1b;
 
 .heading {
     font-family: $head;
@@ -121,6 +122,25 @@ $xxl: "1900px";
 
 .btn {
     @extend %btn;
+}
+
+.border_btn {
+    font-family: $para;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background-color: $red;
+    border: 2.5px solid white;
+    padding: 13px 16px;
+    display: inline-block;
+    letter-spacing: 0.8px;
+    // trans 
+    transition: background-color 0.8s, border-color 0.8s, font-weight 0.9s;
+    &:hover {
+        background-color: darken($color: $red, $amount: 15);
+        border-color: darken($color: $red, $amount: 15);
+        font-weight: bold;
+    }
 }
 
 // para
