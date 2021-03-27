@@ -1,10 +1,55 @@
 #blog_section {
-    background: url('../img/highlight_bg.png') no-repeat center center;
+    background: url("../img/highlight_bg.png") no-repeat center center;
     background-size: cover;
-    // container 
-    
+    // container
 
-
-
-
+    .article_container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        @include resp($md) {
+            justify-content: space-between;
+        }
+        @include resp ($xl) {
+            justify-content: space-around;
+        }
+        .blog_article {
+            width: 100%;
+            &:last-child {
+                margin-top: 80px;
+            }
+            @include resp($sm) {
+                width: 80%;
+                @include center;
+            }
+            @include resp($md) {
+                width: 45%;
+                @include marginY0;
+                &:last-child {
+                    margin-top: 0px;
+                }
+            }
+            @include resp ($xl) {
+                width: 40%;
+            }
+            .heading {
+                font-size: 25px;
+            }
+            .para {
+                margin-top: 20px;
+            }
+            .border_btn {
+                border: none;
+            }
+            @include resp($md) {
+                .heading,
+                .para {
+                    text-align: left;
+                }
+                .btn_wrapper {
+                    text-align: left;
+                }
+            }
+        }
+    }
 }

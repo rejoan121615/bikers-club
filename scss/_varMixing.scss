@@ -89,6 +89,7 @@ $xxl: "1900px";
 
 .container {
     @extend %container;
+    @include padX(120px);
 }
 
 // text
@@ -116,9 +117,14 @@ $xxl: "1900px";
         transition: background-color 0.5s;
     }
 }
-
+.btn_wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
 .btn {
     @extend %btn;
+    display: inline-block;
 }
 
 .border_btn {
@@ -162,6 +168,7 @@ $xxl: "1900px";
     text-align: center;
     color: white;
     text-transform: uppercase;
+    letter-spacing: 0.8px;
     @include resp($sm) {
         text-align: left;
     }
@@ -172,4 +179,11 @@ p, h1, h2, h3, h4, h5, h6, .heading {
     @include resp($lg) {
         text-align: left;
     }
+}
+
+
+// margin 
+@mixin marginY0 {
+    margin-left: 0;
+    margin-right: 0;
 }
