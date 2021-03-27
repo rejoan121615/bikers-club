@@ -780,6 +780,18 @@ p, h1, h2, h3, h4, h5, h6, .heading {
   font-size: 45px;
 }
 
+#motocycle_list {
+  background: url("../img/riderSelection_bg.png") no-repeat center center;
+  background-size: cover;
+}
+#motocycle_list .container .para {
+  margin-top: 35px;
+}
+#motocycle_list .container #cycle_list {
+  width: 100%;
+  height: 450px;
+}
+
 * {
   margin: 0;
   padding: 0;
