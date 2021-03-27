@@ -24,9 +24,6 @@ $red: #ce0000;
 $not_white: #858585;
 $not_black: #1b1b1b;
 
-.heading {
-    font-family: $head;
-}
 
 // padding
 @mixin padX($val) {
@@ -160,3 +157,19 @@ $xxl: "1900px";
 }
 
 
+.heading {
+    font-family: $head;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    @include resp($sm) {
+        text-align: left;
+    }
+}
+
+p, h1, h2, h3, h4, h5, h6, .heading {
+    text-align: center;
+    @include resp($lg) {
+        text-align: left;
+    }
+}
