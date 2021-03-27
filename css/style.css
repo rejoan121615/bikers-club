@@ -582,6 +582,11 @@ p, h1, h2, h3, h4, h5, h6, .heading {
   }
 }
 
+#blog_section {
+  background: url("../img/highlight_bg.png") no-repeat center center;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
