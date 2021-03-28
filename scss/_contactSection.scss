@@ -18,9 +18,26 @@
             "about"
             "contact"
             "event";
+
+        // responsive
+        @include resp($sm) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "about about"
+                "contact event";
+        }
+        @include resp($lg) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-template-areas: "about contact event";
+        }
         aside {
             margin-bottom: 100px;
             &:last-child {
+                margin-bottom: 0px;
+            }
+            @include resp ($lg) {
                 margin-bottom: 0px;
             }
         }
@@ -28,9 +45,15 @@
             grid-area: about;
             .para {
                 margin-top: $margin + px;
+                @include resp ($lg) {
+                    text-align: left;
+                }
             }
             .btn_wrapper {
                 margin-top: 40px;
+                @include resp ($lg) {
+                    text-align: left;
+                }
             }
         }
         .event_list {
@@ -87,6 +110,8 @@
         }
         .contact_info {
             grid-area: event;
+            max-width: 576px;
+            @include center;
             .contact_wrap {
                 margin-top: $margin + px;
                 // phone number
@@ -103,16 +128,15 @@
                         font-size: $mini_head_size + px;
                         font-weight: lighter;
                         text-align: left;
-                        
+                    }
+                    .para {
+                        text-align: left;
+                        &:first-child {
+                            margin-top: 20px;
                         }
-                        .para {
-                            text-align: left;
-                            &:first-child {
-                                margin-top: 20px;
-                            }
                     }
                 }
-                // email 
+                // email
                 .email {
                     margin-top: 35px;
                     h6 {

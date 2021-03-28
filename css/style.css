@@ -1071,11 +1071,30 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .contact_info .contact_
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "about" "contact" "event";
 }
+@media only screen and (min-width: 768px) {
+  #contact .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "about about" "contact event";
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #contact .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "about contact event";
+  }
+}
 #contact .container aside {
   margin-bottom: 100px;
 }
 #contact .container aside:last-child {
   margin-bottom: 0px;
+}
+@media only screen and (min-width: 1200px) {
+  #contact .container aside {
+    margin-bottom: 0px;
+  }
 }
 #contact .container .about {
   grid-area: about;
@@ -1083,8 +1102,18 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .contact_info .contact_
 #contact .container .about .para {
   margin-top: 35px;
 }
+@media only screen and (min-width: 1200px) {
+  #contact .container .about .para {
+    text-align: left;
+  }
+}
 #contact .container .about .btn_wrapper {
   margin-top: 40px;
+}
+@media only screen and (min-width: 1200px) {
+  #contact .container .about .btn_wrapper {
+    text-align: left;
+  }
 }
 #contact .container .event_list {
   grid-area: contact;
@@ -1138,6 +1167,9 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .contact_info .contact_
 }
 #contact .container .contact_info {
   grid-area: event;
+  max-width: 576px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #contact .container .contact_info .contact_wrap {
   margin-top: 35px;
