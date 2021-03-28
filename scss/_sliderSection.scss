@@ -6,8 +6,8 @@
     .slider_container {
         background-color: $red;
         text-align: center;
-        // responsive 
-        @include resp ($md) {
+        // responsive
+        @include resp($md) {
             @include padX(75px);
             margin-top: -185px;
         }
@@ -26,7 +26,6 @@
                 margin-top: 40px;
                 width: 90%;
                 @include center;
-
             }
             // image slider
             #img_slider {
@@ -74,14 +73,14 @@
                 }
                 .heading {
                     text-align: center;
-                    @include resp ($md) {
+                    @include resp($md) {
                         text-align: left;
                     }
                 }
                 .para {
                     margin-top: 30px;
                     margin-bottom: 45px;
-                    @include resp ($md) {
+                    @include resp($md) {
                         text-align: left;
                     }
                 }
@@ -93,15 +92,15 @@
         margin-top: 75px;
         padding-top: 0px;
         padding-bottom: 0px;
-        // responsive 
-        @include resp ($md) {
+        // responsive
+        @include resp($md) {
             margin-top: 100px;
         }
         .heading {
             margin-bottom: 35px;
             font-size: 35px;
             text-align: center;
-            @include resp ($md) {
+            @include resp($md) {
                 text-align: left;
             }
         }
@@ -109,11 +108,11 @@
             @include resp($sm) {
                 width: 70%;
                 @include center;
-                @include resp ($md) {
+                @include resp($md) {
                     text-align: left;
                     margin-left: 0;
                     width: 90%;
-                } 
+                }
             }
         }
     }
