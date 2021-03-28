@@ -875,6 +875,79 @@ p, h1, h2, h3, h4, h5, h6, .heading {
   cursor: pointer;
 }
 
+#newsletter {
+  background: url("../img/newsLetter_bg.png") no-repeat center center;
+  background-size: cover;
+}
+#newsletter .container .heading {
+  font-weight: 500;
+}
+#newsletter .container .heading span {
+  font-weight: bold;
+}
+#newsletter .container .content_wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  #newsletter .container .content_wrapper {
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #newsletter .container .content_wrapper {
+    justify-content: space-between;
+    max-width: initial;
+    flex-flow: row;
+    align-items: center;
+    margin-top: 35px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #newsletter .container .content_wrapper {
+    margin-top: 45px;
+  }
+}
+#newsletter .container .content_wrapper .para {
+  width: 100%;
+  margin-top: 25px;
+}
+@media only screen and (min-width: 992px) {
+  #newsletter .container .content_wrapper .para {
+    width: 37%;
+    margin-top: 0px;
+    text-align: left;
+  }
+}
+#newsletter .container .content_wrapper .form_wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 50px;
+}
+@media only screen and (min-width: 992px) {
+  #newsletter .container .content_wrapper .form_wrap {
+    width: 60%;
+    margin-top: 0px;
+  }
+}
+#newsletter .container .content_wrapper .form_wrap #email_form {
+  width: 65%;
+  padding: 10px 10px;
+  font-family: "Lato-Regular";
+  font-size: 18px;
+}
+#newsletter .container .content_wrapper .form_wrap #news_submit {
+  width: 35%;
+  border: none;
+  cursor: pointer;
+  padding: 13px;
+}
+
 * {
   margin: 0;
   padding: 0;
