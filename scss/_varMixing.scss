@@ -1,0 +1,189 @@
+// generate fonts
+
+$fonts: "Lato-Black", "Lato-Bold", "Lato-Regular", "Lato-LightItalic";
+
+@each $i in $fonts {
+    @font-face {
+        font-family: $i;
+        src: url("../fonts/#{$i}.ttf");
+    }
+}
+
+// -----------------------------------------------------
+// variabls
+// ------------------------------------------------------
+
+// fonts
+$para: "Lato-Regular";
+$head: "Lato-Bold";
+$main_head: "Lato-Black";
+$para_i: "Lato-LightItalic";
+
+// color
+$red: #ce0000;
+$not_white: #858585;
+$not_black: #1b1b1b;
+
+
+// padding
+@mixin padX($val) {
+    padding-top: $val;
+    padding-bottom: $val;
+    @content;
+}
+
+// ----------------------------------------------
+// responsive
+// ----------------------------------------------
+// break points
+
+$x_sm: "576px";
+$sm: "768px";
+$md: "992px";
+$lg: "1200px";
+$xl: "1400px";
+$xxl: "1900px";
+
+@mixin resp($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// container
+%container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    //extra small
+    @include resp($x_sm) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    // small
+    @include resp($sm) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    // medium
+    @include resp($md) {
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+        @include center;
+    }
+    //extra  large
+    @include resp($xl) {
+        width: 85%;
+    }
+    // extra extra large
+    @include resp($xxl) {
+        max-width: 1620px;
+    }
+}
+
+.container {
+    @extend %container;
+    @include padX(120px);
+}
+
+// text
+%text {
+    font-family: $para;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+// btn
+%btn {
+    font-family: $head;
+    font-size: 20px;
+    @include padX(20px);
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: $red;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        background-color: darken($color: $red, $amount: 20);
+        transition: background-color 0.5s;
+    }
+}
+.btn_wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.btn {
+    @extend %btn;
+    display: inline-block;
+}
+
+.border_btn {
+    font-family: $para;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background-color: $red;
+    border: 2.5px solid white;
+    padding: 13px 16px;
+    display: inline-block;
+    letter-spacing: 0.8px;
+    // trans 
+    transition: background-color 0.8s, border-color 0.8s, font-weight 0.9s;
+    &:hover {
+        background-color: darken($color: $red, $amount: 15);
+        border-color: darken($color: $red, $amount: 15);
+        font-weight: bold;
+    }
+}
+
+// para
+.para {
+    $font_size: 18;
+
+    font-family: $para;
+    font-size: $font_size + px;
+    line-height: $font_size + 5 + px;
+    color: white;
+    text-align: center;
+
+    @include resp($md) {
+        font-size: $font_size + 2 + px;
+        line-height: $font_size + 7 + px;
+    }
+}
+
+
+.heading {
+    font-family: $head;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    @include resp($sm) {
+        text-align: left;
+    }
+}
+
+p, h1, h2, h3, h4, h5, h6, .heading {
+    text-align: center;
+    @include resp($lg) {
+        text-align: left;
+    }
+}
+
+
+// margin 
+@mixin marginY0 {
+    margin-left: 0;
+    margin-right: 0;
+}

@@ -1,0 +1,130 @@
+#contact {
+    // varibale
+    $head_font: 25;
+    $margin: 35;
+    $mini_head_size: 18;
+    // style
+    background: url("../img/before_footer_bg.png") no-repeat center center;
+    background-size: cover;
+    // container
+    .heading {
+        font-size: $head_font + px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "about"
+            "contact"
+            "event";
+        aside {
+            margin-bottom: 100px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        .about {
+            grid-area: about;
+            .para {
+                margin-top: $margin + px;
+            }
+            .btn_wrapper {
+                margin-top: 40px;
+            }
+        }
+        .event_list {
+            grid-area: contact;
+            .posts {
+                margin-top: $margin + px;
+                width: 100%;
+                li {
+                    list-style: none;
+                    display: flex;
+                    flex-flow: row wrap;
+                    @include center;
+                    justify-content: space-between;
+                    max-width: 320px;
+                    margin-bottom: 30px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                    // date
+                    .date {
+                        width: 60px;
+                        height: 60px;
+                        background-color: $red;
+                        margin-right: 8px;
+                        .month {
+                            font-size: 22px;
+                            margin-top: 4px;
+                        }
+                        .day {
+                            font-size: 30px;
+                            font-weight: bold;
+                        }
+                    }
+                    // texts
+                    .post_list {
+                        width: 75%;
+                        margin-bottom: 25px;
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                        h6 {
+                            @extend .heading;
+                            font-size: $mini_head_size + px;
+                            text-align: left;
+                            font-size: lighter;
+                        }
+                        .para {
+                            margin-top: 6px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        .contact_info {
+            grid-area: event;
+            .contact_wrap {
+                margin-top: $margin + px;
+                // phone number
+                .phone_number {
+                    font-size: 35px;
+                    text-align: left;
+                }
+                // address
+                .adress {
+                    margin-top: 35px;
+                    h6 {
+                        margin-top: 35px;
+                        @extend .heading;
+                        font-size: $mini_head_size + px;
+                        font-weight: lighter;
+                        text-align: left;
+                        
+                        }
+                        .para {
+                            text-align: left;
+                            &:first-child {
+                                margin-top: 20px;
+                            }
+                    }
+                }
+                // email 
+                .email {
+                    margin-top: 35px;
+                    h6 {
+                        @extend .heading;
+                        font-size: $mini_head_size + px;
+                        text-align: left;
+                    }
+                    .para {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

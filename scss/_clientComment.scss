@@ -1,0 +1,87 @@
+#client_section {
+    background: #000000a1 url("../img/clientComment.png") no-repeat center
+        center;
+    background-size: cover;
+    .container {
+        .child-wrapper {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            // responsive
+            @include resp($md) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .slider-container {
+                width: 100%;
+                text-align: center;
+                @include center;
+                &:last-child {
+                    margin-top: 65px;
+                }
+                @include resp($md) {
+                    width: 48%;
+                    &:last-child {
+                        margin-top: 0px;
+                    }
+                }
+                @include resp($lg) {
+                    width: 40%;
+                }
+                img {
+                    width: 100%;
+                    max-width: 100px;
+                    display: inline-block;
+                }
+                .para {
+                    $font_s: 18;
+                    margin-top: 25px;
+                    font-family: $para_i;
+                    font-size: $font_s + px;
+                    text-align: justify;
+                    line-height: $font_s + 5 + px;
+                    color: white;
+                }
+                .name {
+                    font-size: 25px;
+                    margin-top: 10px;
+                }
+                .title {
+                    font-size: 18px;
+                    margin-top: 8px;
+                    font-family: $para;
+                    font-weight: lighter;
+                }
+                .title,
+                .para,
+                .name {
+                    text-align: center;
+                    // responsive
+                    @include resp($lg) {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        // slider controller 
+        .slider-control {
+            display: none;
+            @include resp ($lg) {
+                display: block;
+                width: 250px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                @include center;
+                margin-top: 45px;
+            }
+            a {
+                display: inline-block;
+                text-decoration: none;
+                width: 50px;
+                color: white;
+                font-size: 45px;
+            }
+        }
+    }
+}

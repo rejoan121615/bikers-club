@@ -1,0 +1,70 @@
+#club_blog {
+    background-color: $red;
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        // responsive 
+        @include resp ($lg) {
+            width: 100%;
+            padding: 0px;
+            align-items: center;
+            max-width: initial;
+        }
+        .club_article {
+            width: 100%;
+            @include resp ($md) {
+                width: 85%;
+                @include center;
+            }
+            @include resp ($lg) {
+                width: 40%;
+                padding-left: 100px;
+            }
+            .heading {
+                @include resp ($md) {
+                    font-size: 40px;
+                } 
+                @include resp ($lg) {
+                    font-size: 65px;
+                }
+            }
+            .para {
+                margin-top: 25px;
+                @include resp ($lg) {
+                    text-align: left;
+                }
+            }
+            .btn_wrapper {
+                @include resp ($lg) {
+                    text-align: left;
+                }
+            }
+        }
+        #img_container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-row-gap: 15px;
+            // margin 
+            margin-top: 80px;
+            // responsive 
+            @include resp ($sm) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-row-gap: 8px;
+                grid-column-gap: 8px;
+                grid-template-rows: repeat(2, 1fr);
+            }
+            @include resp ($lg) {
+                width: 57%;
+                margin-top: 0px;
+                grid-gap: 0;
+            }
+            img {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+}

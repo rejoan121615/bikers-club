@@ -1,0 +1,167 @@
+#main_section {
+    // variable
+    $n_font_s: 18;
+    $heading: 120;
+
+    background: transparent url("../img/main_bg.png") no-repeat center center;
+    background-size: cover;
+    height: 700px;
+    // responsive
+    @include resp($lg) {
+        height: 800px;
+    }
+
+    @include resp($xl) {
+        height: 900px;
+    }
+
+    @include resp($xxl) {
+        height: 900px;
+    }
+    .nav {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background-color: #00000050;
+        transition: all 0.5s;
+        // responsive
+        @include resp($lg) {
+            max-width: 500px;
+            width: 0px;
+            transition: width 0.5s;
+        }
+
+        .nav_wrapper {
+            @include center;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            padding-top: 40px;
+            // responsive
+            @include resp($lg) {
+                margin-right: 90px;
+                padding-top: 55px;
+            }
+
+            a {
+                @extend %text;
+                font-size: $n_font_s;
+                text-align: center;
+                @include padX(8px);
+                // responsive
+                @include resp($lg) {
+                    @include padX(10px);
+                    text-align: right;
+                    transition: border 0.8s;
+                    &:hover {
+                        display: inline-block;
+                        border-bottom: 1px solid $red;
+                    }
+                }
+            }
+        }
+    }
+    .active {
+        height: 100vh;
+        @include resp($lg) {
+            margin-right: 120px;
+            width: 100%;
+        }
+    }
+    // main section
+    main {
+        // width: 50%;
+        padding-top: 100px;
+        text-align: center;
+        padding-top: 150px;
+
+        // responsive
+        @include resp($lg) {
+            text-align: left;
+            padding-top: 180px;
+        }
+
+        @include resp($xl) {
+            padding-top: 210px;
+        }
+        .sm_title {
+            font-family: $para;
+            font-size: 30px;
+            // text-align: center;
+
+            @include resp($sm) {
+                font-size: 35px;
+            }
+
+            @include resp($md) {
+                font-size: 40px;
+            }
+            @include resp($xxl) {
+                font-size: 45px;
+            }
+        }
+        .main_title {
+            font-family: $main_head;
+            font-size: 43px;
+            margin-top: 15px;
+            @include resp($x_sm) {
+                font-size: 70px;
+                margin-top: 0px;
+            }
+            @include resp($md) {
+                font-size: 85px;
+            }
+
+            @include resp($lg) {
+                font-size: 100px;
+            }
+
+            @include resp($xl) {
+                font-size: 115px;
+            }
+            @include resp($xxl) {
+                font-size: 125px;
+            }
+        }
+        .para {
+            margin-top: 20px;
+            // responsive
+            @include resp($sm) {
+                width: 80%;
+                @include center;
+            }
+            @include resp($md) {
+                width: 70%;
+            }
+
+            @include resp($lg) {
+                text-align: left;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        .sm_title,
+        .main_title {
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            // responsive
+            @include resp($lg) {
+                text-align: left;
+            }
+        }
+
+        .btn {
+            margin-top: 50px;
+            @include resp($xl) {
+                margin-top: 80px;
+            }
+        }
+    }
+    // }
+}
+@include resp($lg) {
+    .active_main {
+        display: flex;
+    }
+}
