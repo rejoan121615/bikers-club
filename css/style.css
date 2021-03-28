@@ -937,9 +937,12 @@ p, h1, h2, h3, h4, h5, h6, .heading {
 }
 #newsletter .container .content_wrapper .form_wrap #email_form {
   width: 65%;
-  padding: 10px 10px;
+  padding: 10px 20px;
   font-family: "Lato-Regular";
   font-size: 18px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
 }
 #newsletter .container .content_wrapper .form_wrap #news_submit {
   width: 35%;
