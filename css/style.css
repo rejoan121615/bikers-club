@@ -14,25 +14,25 @@
   font-family: "Lato-LightItalic";
   src: url("../fonts/Lato-LightItalic.ttf");
 }
-#header .container, .container {
+#social_network .container, #header .container, .container {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
 }
 @media only screen and (min-width: 576px) {
-  #header .container, .container {
+  #social_network .container, #header .container, .container {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 @media only screen and (min-width: 768px) {
-  #header .container, .container {
+  #social_network .container, #header .container, .container {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media only screen and (min-width: 992px) {
-  #header .container, .container {
+  #social_network .container, #header .container, .container {
     width: 90%;
     padding-left: 0px;
     padding-right: 0px;
@@ -41,12 +41,12 @@
   }
 }
 @media only screen and (min-width: 1400px) {
-  #header .container, .container {
+  #social_network .container, #header .container, .container {
     width: 85%;
   }
 }
 @media only screen and (min-width: 1900px) {
-  #header .container, .container {
+  #social_network .container, #header .container, .container {
     max-width: 1620px;
   }
 }
@@ -944,11 +944,118 @@ p, h1, h2, h3, h4, h5, h6, .heading {
   border: 1px solid white;
   color: white;
 }
+#newsletter .container .content_wrapper .form_wrap #email_form::placeholder {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+}
 #newsletter .container .content_wrapper .form_wrap #news_submit {
   width: 35%;
   border: none;
   cursor: pointer;
   padding: 13px;
+}
+
+#social_network {
+  background-color: #1b1b1b;
+}
+#social_network .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 50px 60px;
+  grid-template-areas: "social social" "brand brand";
+  align-items: center;
+  padding-bottom: 20px;
+  justify-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+@media only screen and (min-width: 768px) {
+  #social_network .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75px;
+    grid-template-areas: "brand social";
+    justify-content: space-between;
+    justify-items: initial;
+  }
+}
+#social_network .container .brand {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  grid-area: brand;
+}
+#social_network .container .brand h1 {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 25px;
+}
+#social_network .container .brand h1 span {
+  font-weight: bold;
+}
+#social_network .container .brand i {
+  font-size: 28px;
+  margin-right: 8px;
+}
+#social_network .container .brand h1,
+#social_network .container .brand i {
+  color: white;
+}
+@media only screen and (min-width: 992px) {
+  #social_network .container .brand h1 {
+    font-size: 30px;
+  }
+  #social_network .container .brand i {
+    font-size: 33px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #social_network .container .brand h1 {
+    font-size: 33px;
+  }
+  #social_network .container .brand i {
+    font-size: 36px;
+  }
+}
+#social_network .container .social {
+  grid-area: social;
+  max-width: 200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+  #social_network .container .social {
+    justify-self: end;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+#social_network .container .social li {
+  list-style: none;
+  width: 100%/4;
+  cursor: pointer;
+}
+#social_network .container .social li i {
+  color: white;
+  font-size: 22px;
+}
+#social_network .container .menu_btn {
+  grid-area: menu;
+  text-align: right;
+}
+#social_network .container .menu_btn i {
+  color: white;
+  font-size: 32px;
+  padding: 5px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 * {

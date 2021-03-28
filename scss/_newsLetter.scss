@@ -59,6 +59,11 @@
                     background-color: black;
                     border: 1px solid white;
                     color: white;
+                    &::placeholder {
+                        font-family: $para;
+                        font-size: 18px;
+                        
+                    }
                 }
                 #news_submit {
                     width: 35%;
