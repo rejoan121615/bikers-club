@@ -123,7 +123,7 @@
   }
 }
 
-.heading {
+.heading, #contact .container .event_list .posts li .post_list h6 {
   font-family: "Lato-Bold";
   text-align: center;
   color: white;
@@ -131,16 +131,16 @@
   letter-spacing: 0.8px;
 }
 @media only screen and (min-width: 768px) {
-  .heading {
+  .heading, #contact .container .event_list .posts li .post_list h6 {
     text-align: left;
   }
 }
 
-p, h1, h2, h3, h4, h5, h6, .heading {
+p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .post_list h6 {
   text-align: center;
 }
 @media only screen and (min-width: 1200px) {
-  p, h1, h2, h3, h4, h5, h6, .heading {
+  p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .post_list h6 {
     text-align: left;
   }
 }
@@ -453,7 +453,7 @@ p, h1, h2, h3, h4, h5, h6, .heading {
     margin-top: -185px;
   }
 }
-#slider .slider_container .heading {
+#slider .slider_container .heading, #slider .slider_container #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_container h6 {
   text-align: center;
 }
 #slider .slider_container .child_content {
@@ -519,11 +519,11 @@ p, h1, h2, h3, h4, h5, h6, .heading {
     text-align: left;
   }
 }
-#slider .slider_container .child_content .texts .heading {
+#slider .slider_container .child_content .texts .heading, #slider .slider_container .child_content .texts #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_container .child_content .texts h6 {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  #slider .slider_container .child_content .texts .heading {
+  #slider .slider_container .child_content .texts .heading, #slider .slider_container .child_content .texts #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_container .child_content .texts h6 {
     text-align: left;
   }
 }
@@ -546,13 +546,13 @@ p, h1, h2, h3, h4, h5, h6, .heading {
     margin-top: 100px;
   }
 }
-#slider .slider_bottom_sec .heading {
+#slider .slider_bottom_sec .heading, #slider .slider_bottom_sec #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_bottom_sec h6 {
   margin-bottom: 35px;
   font-size: 35px;
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  #slider .slider_bottom_sec .heading {
+  #slider .slider_bottom_sec .heading, #slider .slider_bottom_sec #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_bottom_sec h6 {
     text-align: left;
   }
 }
@@ -666,7 +666,7 @@ p, h1, h2, h3, h4, h5, h6, .heading {
     width: 40%;
   }
 }
-#blog_section .article_container .blog_article .heading {
+#blog_section .article_container .blog_article .heading, #blog_section .article_container .blog_article #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #blog_section .article_container .blog_article h6 {
   font-size: 25px;
 }
 #blog_section .article_container .blog_article .para {
@@ -676,7 +676,7 @@ p, h1, h2, h3, h4, h5, h6, .heading {
   border: none;
 }
 @media only screen and (min-width: 992px) {
-  #blog_section .article_container .blog_article .heading,
+  #blog_section .article_container .blog_article .heading, #blog_section .article_container .blog_article #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #blog_section .article_container .blog_article h6,
 #blog_section .article_container .blog_article .para {
     text-align: left;
   }
@@ -824,12 +824,12 @@ p, h1, h2, h3, h4, h5, h6, .heading {
   }
 }
 @media only screen and (min-width: 992px) {
-  #club_blog .container .club_article .heading {
+  #club_blog .container .club_article .heading, #club_blog #contact .container .club_article .event_list .posts li .post_list h6, #contact #club_blog .container .club_article .event_list .posts li .post_list h6, #club_blog #contact .container .event_list .posts li .post_list .club_article h6, #contact #club_blog .container .event_list .posts li .post_list .club_article h6 {
     font-size: 40px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #club_blog .container .club_article .heading {
+  #club_blog .container .club_article .heading, #club_blog #contact .container .club_article .event_list .posts li .post_list h6, #contact #club_blog .container .club_article .event_list .posts li .post_list h6, #club_blog #contact .container .event_list .posts li .post_list .club_article h6, #contact #club_blog .container .event_list .posts li .post_list .club_article h6 {
     font-size: 65px;
   }
 }
@@ -879,10 +879,10 @@ p, h1, h2, h3, h4, h5, h6, .heading {
   background: url("../img/newsLetter_bg.png") no-repeat center center;
   background-size: cover;
 }
-#newsletter .container .heading {
+#newsletter .container .heading, #newsletter #contact .container .event_list .posts li .post_list h6, #contact #newsletter .container .event_list .posts li .post_list h6 {
   font-weight: 500;
 }
-#newsletter .container .heading span {
+#newsletter .container .heading span, #newsletter #contact .container .event_list .posts li .post_list h6 span, #contact #newsletter .container .event_list .posts li .post_list h6 span {
   font-weight: bold;
 }
 #newsletter .container .content_wrapper {
@@ -1056,6 +1056,90 @@ p, h1, h2, h3, h4, h5, h6, .heading {
   padding: 5px;
   display: inline-block;
   cursor: pointer;
+}
+
+#contact {
+  background: url("../img/before_footer_bg.png") no-repeat center center;
+  background-size: cover;
+}
+#contact .heading, #contact .container .event_list .posts li .post_list h6 {
+  font-size: 25px;
+}
+#contact .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "about" "contact" "event";
+}
+#contact .container aside {
+  margin-bottom: 100px;
+}
+#contact .container aside:last-child {
+  margin-bottom: 0px;
+}
+#contact .container .about {
+  grid-area: about;
+}
+#contact .container .about .para {
+  margin-top: 35px;
+}
+#contact .container .about .btn_wrapper {
+  margin-top: 40px;
+}
+#contact .container .event_list {
+  grid-area: contact;
+}
+#contact .container .event_list .posts {
+  margin-top: 35px;
+  width: 100%;
+}
+#contact .container .event_list .posts li {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  max-width: 320px;
+  margin-bottom: 30px;
+}
+#contact .container .event_list .posts li:last-child {
+  margin-bottom: 0px;
+}
+#contact .container .event_list .posts li .date {
+  width: 60px;
+  height: 60px;
+  background-color: #ce0000;
+  margin-right: 8px;
+}
+#contact .container .event_list .posts li .date .month {
+  font-size: 22px;
+  margin-top: 4px;
+}
+#contact .container .event_list .posts li .date .day {
+  font-size: 30px;
+  font-weight: bold;
+}
+#contact .container .event_list .posts li .post_list {
+  width: 75%;
+  margin-bottom: 25px;
+}
+#contact .container .event_list .posts li .post_list:last-child {
+  margin-bottom: 0px;
+}
+#contact .container .event_list .posts li .post_list h6 {
+  font-size: 19px;
+  text-align: left;
+}
+#contact .container .event_list .posts li .post_list .para {
+  margin-top: 6px;
+  text-align: left;
+}
+#contact .container .contact_info {
+  grid-area: event;
+}
+#contact .container .contact_info .contact_wrap {
+  margin-top: 35px;
 }
 
 * {
