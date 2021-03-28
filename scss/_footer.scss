@@ -1,0 +1,19 @@
+#footer {
+    width: 100%;
+    background-color: $not_black;
+    .container {
+        @include padX(40px);
+        h5 {
+            @extend .heading;
+            text-align: center;
+            font-weight: lighter;
+            @include resp ($lg) {
+                font-size: 18px;
+            }
+            a {
+                color: white;
+                font-weight: bolder;
+            }
+        }
+    }
+}

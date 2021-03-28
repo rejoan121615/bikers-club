@@ -123,7 +123,7 @@
   }
 }
 
-.heading, #contact .container .event_list .posts li .post_list h6 {
+.heading, #footer .container h5, #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .adress h6, #contact .container .event_list .posts li .post_list h6 {
   font-family: "Lato-Bold";
   text-align: center;
   color: white;
@@ -131,16 +131,16 @@
   letter-spacing: 0.8px;
 }
 @media only screen and (min-width: 768px) {
-  .heading, #contact .container .event_list .posts li .post_list h6 {
+  .heading, #footer .container h5, #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .adress h6, #contact .container .event_list .posts li .post_list h6 {
     text-align: left;
   }
 }
 
-p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .post_list h6 {
+p, h1, h2, h3, h4, h5, h6, .heading, #footer .container h5, #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .adress h6, #contact .container .event_list .posts li .post_list h6 {
   text-align: center;
 }
 @media only screen and (min-width: 1200px) {
-  p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .post_list h6 {
+  p, h1, h2, h3, h4, h5, h6, .heading, #footer .container h5, #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .adress h6, #contact .container .event_list .posts li .post_list h6 {
     text-align: left;
   }
 }
@@ -453,7 +453,7 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
     margin-top: -185px;
   }
 }
-#slider .slider_container .heading, #slider .slider_container #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_container h6 {
+#slider .slider_container .heading, #slider .slider_container #footer .container h5, #footer .container #slider .slider_container h5, #slider .slider_container #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .email #slider .slider_container h6, #slider .slider_container #contact .container .contact_info .contact_wrap .adress h6, #contact .container .contact_info .contact_wrap .adress #slider .slider_container h6, #slider .slider_container #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_container h6 {
   text-align: center;
 }
 #slider .slider_container .child_content {
@@ -519,11 +519,11 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
     text-align: left;
   }
 }
-#slider .slider_container .child_content .texts .heading, #slider .slider_container .child_content .texts #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_container .child_content .texts h6 {
+#slider .slider_container .child_content .texts .heading, #slider .slider_container .child_content .texts #footer .container h5, #footer .container #slider .slider_container .child_content .texts h5, #slider .slider_container .child_content .texts #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .email #slider .slider_container .child_content .texts h6, #slider .slider_container .child_content .texts #contact .container .contact_info .contact_wrap .adress h6, #contact .container .contact_info .contact_wrap .adress #slider .slider_container .child_content .texts h6, #slider .slider_container .child_content .texts #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_container .child_content .texts h6 {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  #slider .slider_container .child_content .texts .heading, #slider .slider_container .child_content .texts #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_container .child_content .texts h6 {
+  #slider .slider_container .child_content .texts .heading, #slider .slider_container .child_content .texts #footer .container h5, #footer .container #slider .slider_container .child_content .texts h5, #slider .slider_container .child_content .texts #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .email #slider .slider_container .child_content .texts h6, #slider .slider_container .child_content .texts #contact .container .contact_info .contact_wrap .adress h6, #contact .container .contact_info .contact_wrap .adress #slider .slider_container .child_content .texts h6, #slider .slider_container .child_content .texts #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_container .child_content .texts h6 {
     text-align: left;
   }
 }
@@ -546,13 +546,13 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
     margin-top: 100px;
   }
 }
-#slider .slider_bottom_sec .heading, #slider .slider_bottom_sec #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_bottom_sec h6 {
+#slider .slider_bottom_sec .heading, #slider .slider_bottom_sec #footer .container h5, #footer .container #slider .slider_bottom_sec h5, #slider .slider_bottom_sec #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .email #slider .slider_bottom_sec h6, #slider .slider_bottom_sec #contact .container .contact_info .contact_wrap .adress h6, #contact .container .contact_info .contact_wrap .adress #slider .slider_bottom_sec h6, #slider .slider_bottom_sec #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_bottom_sec h6 {
   margin-bottom: 35px;
   font-size: 35px;
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  #slider .slider_bottom_sec .heading, #slider .slider_bottom_sec #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_bottom_sec h6 {
+  #slider .slider_bottom_sec .heading, #slider .slider_bottom_sec #footer .container h5, #footer .container #slider .slider_bottom_sec h5, #slider .slider_bottom_sec #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .email #slider .slider_bottom_sec h6, #slider .slider_bottom_sec #contact .container .contact_info .contact_wrap .adress h6, #contact .container .contact_info .contact_wrap .adress #slider .slider_bottom_sec h6, #slider .slider_bottom_sec #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #slider .slider_bottom_sec h6 {
     text-align: left;
   }
 }
@@ -666,7 +666,7 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
     width: 40%;
   }
 }
-#blog_section .article_container .blog_article .heading, #blog_section .article_container .blog_article #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #blog_section .article_container .blog_article h6 {
+#blog_section .article_container .blog_article .heading, #blog_section .article_container .blog_article #footer .container h5, #footer .container #blog_section .article_container .blog_article h5, #blog_section .article_container .blog_article #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .email #blog_section .article_container .blog_article h6, #blog_section .article_container .blog_article #contact .container .contact_info .contact_wrap .adress h6, #contact .container .contact_info .contact_wrap .adress #blog_section .article_container .blog_article h6, #blog_section .article_container .blog_article #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #blog_section .article_container .blog_article h6 {
   font-size: 25px;
 }
 #blog_section .article_container .blog_article .para {
@@ -676,7 +676,7 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
   border: none;
 }
 @media only screen and (min-width: 992px) {
-  #blog_section .article_container .blog_article .heading, #blog_section .article_container .blog_article #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #blog_section .article_container .blog_article h6,
+  #blog_section .article_container .blog_article .heading, #blog_section .article_container .blog_article #footer .container h5, #footer .container #blog_section .article_container .blog_article h5, #blog_section .article_container .blog_article #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .email #blog_section .article_container .blog_article h6, #blog_section .article_container .blog_article #contact .container .contact_info .contact_wrap .adress h6, #contact .container .contact_info .contact_wrap .adress #blog_section .article_container .blog_article h6, #blog_section .article_container .blog_article #contact .container .event_list .posts li .post_list h6, #contact .container .event_list .posts li .post_list #blog_section .article_container .blog_article h6,
 #blog_section .article_container .blog_article .para {
     text-align: left;
   }
@@ -824,12 +824,12 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
   }
 }
 @media only screen and (min-width: 992px) {
-  #club_blog .container .club_article .heading, #club_blog #contact .container .club_article .event_list .posts li .post_list h6, #contact #club_blog .container .club_article .event_list .posts li .post_list h6, #club_blog #contact .container .event_list .posts li .post_list .club_article h6, #contact #club_blog .container .event_list .posts li .post_list .club_article h6 {
+  #club_blog .container .club_article .heading, #club_blog #footer .container .club_article h5, #footer #club_blog .container .club_article h5, #club_blog #contact .container .club_article .contact_info .contact_wrap .email h6, #contact #club_blog .container .club_article .contact_info .contact_wrap .email h6, #club_blog #contact .container .contact_info .contact_wrap .email .club_article h6, #contact #club_blog .container .contact_info .contact_wrap .email .club_article h6, #club_blog #contact .container .club_article .contact_info .contact_wrap .adress h6, #contact #club_blog .container .club_article .contact_info .contact_wrap .adress h6, #club_blog #contact .container .contact_info .contact_wrap .adress .club_article h6, #contact #club_blog .container .contact_info .contact_wrap .adress .club_article h6, #club_blog #contact .container .club_article .event_list .posts li .post_list h6, #contact #club_blog .container .club_article .event_list .posts li .post_list h6, #club_blog #contact .container .event_list .posts li .post_list .club_article h6, #contact #club_blog .container .event_list .posts li .post_list .club_article h6 {
     font-size: 40px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #club_blog .container .club_article .heading, #club_blog #contact .container .club_article .event_list .posts li .post_list h6, #contact #club_blog .container .club_article .event_list .posts li .post_list h6, #club_blog #contact .container .event_list .posts li .post_list .club_article h6, #contact #club_blog .container .event_list .posts li .post_list .club_article h6 {
+  #club_blog .container .club_article .heading, #club_blog #footer .container .club_article h5, #footer #club_blog .container .club_article h5, #club_blog #contact .container .club_article .contact_info .contact_wrap .email h6, #contact #club_blog .container .club_article .contact_info .contact_wrap .email h6, #club_blog #contact .container .contact_info .contact_wrap .email .club_article h6, #contact #club_blog .container .contact_info .contact_wrap .email .club_article h6, #club_blog #contact .container .club_article .contact_info .contact_wrap .adress h6, #contact #club_blog .container .club_article .contact_info .contact_wrap .adress h6, #club_blog #contact .container .contact_info .contact_wrap .adress .club_article h6, #contact #club_blog .container .contact_info .contact_wrap .adress .club_article h6, #club_blog #contact .container .club_article .event_list .posts li .post_list h6, #contact #club_blog .container .club_article .event_list .posts li .post_list h6, #club_blog #contact .container .event_list .posts li .post_list .club_article h6, #contact #club_blog .container .event_list .posts li .post_list .club_article h6 {
     font-size: 65px;
   }
 }
@@ -879,10 +879,10 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
   background: url("../img/newsLetter_bg.png") no-repeat center center;
   background-size: cover;
 }
-#newsletter .container .heading, #newsletter #contact .container .event_list .posts li .post_list h6, #contact #newsletter .container .event_list .posts li .post_list h6 {
+#newsletter .container .heading, #newsletter #footer .container h5, #footer #newsletter .container h5, #newsletter #contact .container .contact_info .contact_wrap .email h6, #contact #newsletter .container .contact_info .contact_wrap .email h6, #newsletter #contact .container .contact_info .contact_wrap .adress h6, #contact #newsletter .container .contact_info .contact_wrap .adress h6, #newsletter #contact .container .event_list .posts li .post_list h6, #contact #newsletter .container .event_list .posts li .post_list h6 {
   font-weight: 500;
 }
-#newsletter .container .heading span, #newsletter #contact .container .event_list .posts li .post_list h6 span, #contact #newsletter .container .event_list .posts li .post_list h6 span {
+#newsletter .container .heading span, #newsletter #footer .container h5 span, #footer #newsletter .container h5 span, #newsletter #contact .container .contact_info .contact_wrap .email h6 span, #contact #newsletter .container .contact_info .contact_wrap .email h6 span, #newsletter #contact .container .contact_info .contact_wrap .adress h6 span, #contact #newsletter .container .contact_info .contact_wrap .adress h6 span, #newsletter #contact .container .event_list .posts li .post_list h6 span, #contact #newsletter .container .event_list .posts li .post_list h6 span {
   font-weight: bold;
 }
 #newsletter .container .content_wrapper {
@@ -1062,7 +1062,7 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
   background: url("../img/before_footer_bg.png") no-repeat center center;
   background-size: cover;
 }
-#contact .heading, #contact .container .event_list .posts li .post_list h6 {
+#contact .heading, #contact #footer .container h5, #footer .container #contact h5, #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .adress h6, #contact .container .event_list .posts li .post_list h6 {
   font-size: 25px;
 }
 #contact .container {
@@ -1071,11 +1071,30 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "about" "contact" "event";
 }
+@media only screen and (min-width: 768px) {
+  #contact .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "about about" "contact event";
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #contact .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "about contact event";
+  }
+}
 #contact .container aside {
   margin-bottom: 100px;
 }
 #contact .container aside:last-child {
   margin-bottom: 0px;
+}
+@media only screen and (min-width: 1200px) {
+  #contact .container aside {
+    margin-bottom: 0px;
+  }
 }
 #contact .container .about {
   grid-area: about;
@@ -1083,8 +1102,18 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
 #contact .container .about .para {
   margin-top: 35px;
 }
+@media only screen and (min-width: 1200px) {
+  #contact .container .about .para {
+    text-align: left;
+  }
+}
 #contact .container .about .btn_wrapper {
   margin-top: 40px;
+}
+@media only screen and (min-width: 1200px) {
+  #contact .container .about .btn_wrapper {
+    text-align: left;
+  }
 }
 #contact .container .event_list {
   grid-area: contact;
@@ -1128,8 +1157,9 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
   margin-bottom: 0px;
 }
 #contact .container .event_list .posts li .post_list h6 {
-  font-size: 19px;
+  font-size: 18px;
   text-align: left;
+  font-size: lighter;
 }
 #contact .container .event_list .posts li .post_list .para {
   margin-top: 6px;
@@ -1137,9 +1167,63 @@ p, h1, h2, h3, h4, h5, h6, .heading, #contact .container .event_list .posts li .
 }
 #contact .container .contact_info {
   grid-area: event;
+  max-width: 576px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #contact .container .contact_info .contact_wrap {
   margin-top: 35px;
+}
+#contact .container .contact_info .contact_wrap .phone_number {
+  font-size: 35px;
+  text-align: left;
+}
+#contact .container .contact_info .contact_wrap .adress {
+  margin-top: 35px;
+}
+#contact .container .contact_info .contact_wrap .adress h6 {
+  margin-top: 35px;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: left;
+}
+#contact .container .contact_info .contact_wrap .adress .para {
+  text-align: left;
+}
+#contact .container .contact_info .contact_wrap .adress .para:first-child {
+  margin-top: 20px;
+}
+#contact .container .contact_info .contact_wrap .email {
+  margin-top: 35px;
+}
+#contact .container .contact_info .contact_wrap .email h6 {
+  font-size: 18px;
+  text-align: left;
+}
+#contact .container .contact_info .contact_wrap .email .para {
+  text-align: left;
+}
+
+#footer {
+  width: 100%;
+  background-color: #1b1b1b;
+}
+#footer .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#footer .container h5 {
+  text-align: center;
+  font-weight: lighter;
+}
+@media only screen and (min-width: 1200px) {
+  #footer .container h5 {
+    font-size: 18px;
+  }
+}
+#footer .container h5 a {
+  color: white;
+  font-weight: bolder;
 }
 
 * {

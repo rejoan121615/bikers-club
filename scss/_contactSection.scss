@@ -2,6 +2,7 @@
     // varibale
     $head_font: 25;
     $margin: 35;
+    $mini_head_size: 18;
     // style
     background: url("../img/before_footer_bg.png") no-repeat center center;
     background-size: cover;
@@ -17,9 +18,26 @@
             "about"
             "contact"
             "event";
+
+        // responsive
+        @include resp($sm) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "about about"
+                "contact event";
+        }
+        @include resp($lg) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-template-areas: "about contact event";
+        }
         aside {
             margin-bottom: 100px;
             &:last-child {
+                margin-bottom: 0px;
+            }
+            @include resp ($lg) {
                 margin-bottom: 0px;
             }
         }
@@ -27,9 +45,15 @@
             grid-area: about;
             .para {
                 margin-top: $margin + px;
+                @include resp ($lg) {
+                    text-align: left;
+                }
             }
             .btn_wrapper {
                 margin-top: 40px;
+                @include resp ($lg) {
+                    text-align: left;
+                }
             }
         }
         .event_list {
@@ -72,8 +96,9 @@
                         }
                         h6 {
                             @extend .heading;
-                            font-size: 19px;
+                            font-size: $mini_head_size + px;
                             text-align: left;
+                            font-size: lighter;
                         }
                         .para {
                             margin-top: 6px;
@@ -85,8 +110,44 @@
         }
         .contact_info {
             grid-area: event;
+            max-width: 576px;
+            @include center;
             .contact_wrap {
                 margin-top: $margin + px;
+                // phone number
+                .phone_number {
+                    font-size: 35px;
+                    text-align: left;
+                }
+                // address
+                .adress {
+                    margin-top: 35px;
+                    h6 {
+                        margin-top: 35px;
+                        @extend .heading;
+                        font-size: $mini_head_size + px;
+                        font-weight: lighter;
+                        text-align: left;
+                    }
+                    .para {
+                        text-align: left;
+                        &:first-child {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                // email
+                .email {
+                    margin-top: 35px;
+                    h6 {
+                        @extend .heading;
+                        font-size: $mini_head_size + px;
+                        text-align: left;
+                    }
+                    .para {
+                        text-align: left;
+                    }
+                }
             }
         }
     }
