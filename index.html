@@ -85,7 +85,7 @@
                             </div>
                             <!-- main slider  -->
                             <div id="img_slider">
-                                <div class="swiper-container">
+                                <div class="swiper-container main-slider-container">
                                     <div class="swiper-wrapper">
                                         <!-- rider slide  -->
                                         <div class="swiper-slide">
@@ -113,23 +113,11 @@
                                         </div>
                                     </div>
                                     <!-- --------- swiper control btn ---------------  -->
-                                    <div class="swiper-button-prev">
-                                        <i class="fas fa-chevron-left"></i>
+                                    <div class="swiper-button-prev swiper-btn">
                                     </div>
-                                    <div class="swiper-button-next">
-                                        <i class="fas fa-chevron-right"></i>
+                                    <div class="swiper-button-next swiper-btn">
                                     </div>
                                 </div>
-                                <!-- <div class="sli_child_con">
-                                    <img src="./img/slider/one.jpg" alt="Bike with Rider">
-                                    <img src="./img/slider/two.jpg" alt="Bike with Rider">
-                                    <img src="./img/slider/three.jpg" alt="Bike with Rider">
-                                    <img src="./img/slider/four.jpg" alt="Bike with Rider">
-                                    <img src="./img/slider/five.jpg" alt="Bike with Rider">
-                                    <img src="./img/slider/six.jpg" alt="Bike with Rider">
-                                </div>
-                                <a href="#" class="left_btn"></a>
-                                <a href="#" class="right_btn"></a> -->
                             </div>
                         </div>
                     </div>
@@ -371,5 +359,23 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <!-- script tag  -->
         <script src="./js/script.js" type="text/javascript"></script>
+        <!-- slider script  -->
+        <script type="text/javascript">
+            const swiper = new Swiper ('.main-slider-container', {
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                },
+                // slidesPerColumn: 2
+                // ,
+                speed: 400,
+                spaceBetween: 50,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+        </script>
     </body>
 </html>

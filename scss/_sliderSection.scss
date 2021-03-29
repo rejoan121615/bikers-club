@@ -27,38 +27,91 @@
                 width: 90%;
                 @include center;
             }
+
+
+
+
+
+
+
             // image slider
+            
             #img_slider {
-                order: 1;
-                flex-basis: 100%;
-                margin-top: 50px;
-                // responsive
-                @include resp($sm) {
-                    max-width: 650px;
-                    @include center;
+                width: 100%;
+                margin-top: 45px;
+                max-width: 550px;
+                @include center;
+
+                // responsive 
+                @include resp ($sm) {
+                    max-width: 700px;
                 }
-                @include resp($md) {
-                    max-width: initial;
-                    margin: 0;
-                    flex-basis: 62%;
+                @include resp ($md) {
+                    width: 60%;
+                    order: 5;
+                    margin: 0px;
+                    align-self: center;
                 }
-                .sli_child_con {
+
+                // container 
+                .swiper-container {
                     width: 100%;
-                    overflow: hidden;
-                    height: 300px;
-                    // imgages
-                    img {
-                        display: inline-block;
-                        width: 100%;
-                        float: left;
+
+                // swiper btn 
+                .swiper-btn {
+                    display: none;
+                    @include resp ($md) {
+                        display: block;
+                        color: white;
+                    }
+                    @include resp ($xl) {
+                        &:first-child {
+                            margin-left: 10px;
+                        }
+                        &:last-child {
+                            margin-right: 10px;
+                        }
                     }
                 }
+
+                    // swiper wrapper 
+                    .swiper-wrapper {
+
+
+                    // slide 
+                    .swiper-slide {
+
+                        // images 
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+    
+                    }
+                }
+            }                
+
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             // text
             .texts {
                 order: 2;
-                margin-top: 50px;
+                margin-top: 85px;
                 // responsive
                 @include resp($sm) {
                     max-width: 750px;
