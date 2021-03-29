@@ -194,21 +194,66 @@
             <div class="container">
                 <h1 class="heading">Choose your rider right away</h1>
                 <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam provident, tenetur quam placeat minima ea laborum dicta blanditiis vitae aspernatur asperiores modi dolor? Reiciendis, adipisci. tenetur quam placeat minima ea laborum dicta blanditiis vitae aspernatur asperiores modi dolor? Reiciendis, adipisci.</p>
-                <!-- motocycle list  -->
-                <div id="cycle_list">
-                    <!-- slider container  -->
-                    <div class="child_container">
-                        <div class="child_wrap">
-                            <!-- childs  -->
-                            <div class="child">
-                                <img src="" alt="">
+<!-- ---------------------------------------------------------- -->
+                <!-- motocycle list slider  -->
+<!-- ---------------------------------------------------------- -->
+                <div class="swiper-container bike-list-slider">
+                    <!-- wrapper  -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">                            
+                            <img class="swiper-slide" src="./img/cycleListSlider/one.jpg" alt="racing bike image">
+                            <div class="btn_wrapper">
+                                <a href="" class="btn">click here</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide" src="./img/cycleListSlider/two.jpg" alt="racing bike image">
+                            <div class="btn_wrapper">
+                                <a href="" class="btn">click here</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide" src="./img/cycleListSlider/three.jpg" alt="racing bike image">
+                            <div class="btn_wrapper">
+                                <a href="" class="btn">click here</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide" src="./img/cycleListSlider/four.jpg" alt="racing bike image">
+                            <div class="btn_wrapper">
+                                <a href="" class="btn">click here</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide" src="./img/cycleListSlider/five.jpg" alt="racing bike image">
+                            <div class="btn_wrapper">
+                                <a href="" class="btn">click here</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide" src="./img/cycleListSlider/six.jpg" alt="racing bike image">
+                            <div class="btn_wrapper">
+                                <a href="" class="btn">click here</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide" src="./img/cycleListSlider/seven.jpg" alt="racing bike image">
+                            <div class="btn_wrapper">
+                                <a href="" class="btn">click here</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide" src="./img/cycleListSlider/eight.jpg" alt="racing bike image">
+                            <div class="btn_wrapper">
+                                <a href="" class="btn">click here</a>
                             </div>
                         </div>
                     </div>
-                    <!-- slider btn  -->
-                    <a class="slider_btn left_btn" href=""><i class="fas fa-angle-left"></i></a>
-                    <a class="slider_btn right_btn" href=""><i class="fas fa-angle-right"></i></a>
+                    <!-- control btn  -->
+                    <div class="swiper-button-prev swiper-btn"></div>
+                    <div class="swiper-button-next swiper-btn"></div>
                 </div>
+                
             </div>
         </section>
         <!-- club blogs  -->
@@ -361,7 +406,7 @@
         <script src="./js/script.js" type="text/javascript"></script>
         <!-- slider script  -->
         <script type="text/javascript">
-            const swiper = new Swiper ('.main-slider-container', {
+            const swiper1 = new Swiper ('.main-slider-container', {
                 loop: true,
                 autoplay: {
                     delay: 2500,
@@ -377,5 +422,7 @@
             });
 
         </script>
+        <!-- bike list slider  -->
+        <script src="./js/bikeListSlider.js"></script>
     </body>
 </html>

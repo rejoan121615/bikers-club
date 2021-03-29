@@ -799,12 +799,51 @@ p, h1, h2, h3, h4, h5, h6, .heading, #footer .container h5, #contact .container 
   background: url("../img/riderSelection_bg.png") no-repeat center center;
   background-size: cover;
 }
+#motocycle_list .container .heading, #motocycle_list #footer .container h5, #footer #motocycle_list .container h5, #motocycle_list #contact .container .contact_info .contact_wrap .email h6, #contact #motocycle_list .container .contact_info .contact_wrap .email h6, #motocycle_list #contact .container .contact_info .contact_wrap .adress h6, #contact #motocycle_list .container .contact_info .contact_wrap .adress h6, #motocycle_list #contact .container .event_list .posts li .post_list h6, #contact #motocycle_list .container .event_list .posts li .post_list h6 {
+  text-align: center;
+}
 #motocycle_list .container .para {
   margin-top: 35px;
 }
-#motocycle_list .container #cycle_list {
-  width: 100%;
-  height: 450px;
+@media only screen and (min-width: 1200px) {
+  #motocycle_list .container .para {
+    text-align: left;
+  }
+}
+#motocycle_list .container .bike-list-slider {
+  margin-top: 45px;
+}
+@media only screen and (min-width: 992px) {
+  #motocycle_list .container .bike-list-slider {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#motocycle_list .container .bike-list-slider .swiper-slide img {
+  position: relative;
+  z-index: 5;
+}
+#motocycle_list .container .bike-list-slider .swiper-slide .btn_wrapper {
+  margin-top: -20px;
+  position: relative;
+  z-index: 100;
+}
+#motocycle_list .container .bike-list-slider .swiper-slide .btn_wrapper .btn {
+  padding: 10px 22px;
+  font-size: 16px;
+}
+#motocycle_list .container .bike-list-slider .swiper-btn {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  #motocycle_list .container .bike-list-slider .swiper-btn {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    top: 40%;
+  }
 }
 
 #club_blog {
