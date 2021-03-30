@@ -14,6 +14,17 @@
   font-family: "Lato-LightItalic";
   src: url("../fonts/Lato-LightItalic.ttf");
 }
+.sec_heading {
+  font-size: 35px;
+  line-height: 45px;
+}
+@media only screen and (min-width: 1200px) {
+  .sec_heading {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
 #social_network .container, #header .container, .container {
   width: 100%;
   padding-left: 20px;
@@ -1172,7 +1183,7 @@ p, h1, h2, h3, h4, h5, h6, .heading, #footer .container h5, #contact .container 
   background-size: cover;
 }
 #contact .heading, #contact #footer .container h5, #footer .container #contact h5, #contact .container .contact_info .contact_wrap .email h6, #contact .container .contact_info .contact_wrap .adress h6, #contact .container .event_list .posts li .post_list h6 {
-  font-size: 25px;
+  font-size: 35px;
 }
 #contact .container {
   display: grid;

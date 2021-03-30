@@ -9,6 +9,22 @@ $fonts: "Lato-Black", "Lato-Bold", "Lato-Regular", "Lato-LightItalic";
     }
 }
 
+// section heading 
+$sec_head_f_size: 35;
+
+@function pxConvert ($size) {
+    @return $size + px;
+}
+
+.sec_heading {
+    font-size: pxConvert($sec_head_f_size);
+    line-height: pxConvert($sec_head_f_size + 10);
+    @media only screen and (min-width: 1200px) {
+        font-size: pxConvert($sec_head_f_size + 10);
+        line-height: pxConvert($sec_head_f_size + 20);
+    }
+}
+
 // -----------------------------------------------------
 // variabls
 // ------------------------------------------------------

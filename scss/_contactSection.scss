@@ -7,8 +7,11 @@
     background: url("../img/before_footer_bg.png") no-repeat center center;
     background-size: cover;
     // container
+    // .heading {
+    //     font-size: $head_font + px;
+    // }
     .heading {
-        font-size: $head_font + px;
+        font-size: pxConvert(35);
     }
     .container {
         display: grid;
