@@ -13,26 +13,15 @@
                 justify-content: space-between;
             }
             .slider-container {
-                width: 100%;
-                text-align: center;
-                @include center;
-                &:last-child {
-                    margin-top: 65px;
-                }
-                @include resp($md) {
-                    width: 48%;
-                    &:last-child {
-                        margin-top: 0px;
-                    }
-                }
-                @include resp($lg) {
-                    width: 40%;
-                }
+                background-color: red;
                 img {
                     width: 100%;
                     max-width: 100px;
                     display: inline-block;
                 }
+
+
+                // --------------------------------------
                 .para {
                     $font_s: 18;
                     margin-top: 25px;
@@ -63,24 +52,87 @@
                 }
             }
         }
-        // slider controller 
-        .slider-control {
-            display: none;
-            @include resp ($lg) {
-                display: block;
-                width: 250px;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-                @include center;
-                margin-top: 45px;
+        // ---------------------------------------
+        // slider style 
+        // -----------------------------------------
+        .client_list_slider {
+            // slider container (child )
+            // height: 440px;
+            height: 425px;
+            // responsive design 
+            @include resp ($x_sm) {
+                height: 370px;
             }
-            a {
-                display: inline-block;
-                text-decoration: none;
-                width: 50px;
-                color: white;
-                font-size: 45px;
+            @include resp ($sm) {
+                height: 420px;
+            }
+            .slider-container {
+                width: 100%;
+                text-align: center;
+                cursor: grab;
+                max-width: 420px;
+                @include center;
+                // responsive design 
+                @include resp ($sm) {
+                    max-width: 475px;
+                }
+                
+                img {
+                    width: 100%;
+                    max-width: 120px;
+                    @include resp ($sm) {
+                        max-width: 150px;
+                    }
+                    @include resp ($lg) {
+                        max-width: 120px;
+                    }
+                }
+                .para {
+                    margin-top: 15px;
+                    @include resp ($sm) {
+                        margin-top: 20px;
+                    }
+                    @include resp ($lg) {
+                        text-align: left;
+                    }
+                }
+                .name {
+                    font-size: 22px;
+                    margin-top: 10px;
+                    @include resp ($sm) {
+                        margin-top: 15px;
+                        font-size: 24px;
+                    }
+                }
+                .title {
+                    font-size: 18px;
+                    margin-top: 10px;
+                    @include resp ($sm) {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .slider-btn {
+                display: none;
+                @include resp ($md) {
+                    display: block;
+                    color: white;
+                    top: initial;
+                    right: initial;
+                    bottom: 0px;
+                    left: initial;
+                }
+            }
+            .swiper-button-prev {
+                left: 40%;
+            }
+            .swiper-button-next {
+                right: 40%;
+            }
+            .swiper-pagination {
+                @include resp ($md) {
+                    display: none;
+                }
             }
         }
     }

@@ -40,7 +40,7 @@
                 @include resp($md) {
                     display: block;
 
-                    color: white;
+                    color: $red;
                     font-weight: bold;
                     font-size: 45px;
                     top: 40%;

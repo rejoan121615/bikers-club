@@ -716,26 +716,7 @@ p, h1, h2, h3, h4, h5, h6, .heading, #footer .container h5, #contact .container 
   }
 }
 #client_section .container .child-wrapper .slider-container {
-  width: 100%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-#client_section .container .child-wrapper .slider-container:last-child {
-  margin-top: 65px;
-}
-@media only screen and (min-width: 992px) {
-  #client_section .container .child-wrapper .slider-container {
-    width: 48%;
-  }
-  #client_section .container .child-wrapper .slider-container:last-child {
-    margin-top: 0px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  #client_section .container .child-wrapper .slider-container {
-    width: 40%;
-  }
+  background-color: red;
 }
 #client_section .container .child-wrapper .slider-container img {
   width: 100%;
@@ -772,27 +753,101 @@ p, h1, h2, h3, h4, h5, h6, .heading, #footer .container h5, #contact .container 
     text-align: left;
   }
 }
-#client_section .container .slider-control {
-  display: none;
+#client_section .container .client_list_slider {
+  height: 425px;
 }
-@media only screen and (min-width: 1200px) {
-  #client_section .container .slider-control {
-    display: block;
-    width: 250px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 45px;
+@media only screen and (min-width: 576px) {
+  #client_section .container .client_list_slider {
+    height: 370px;
   }
 }
-#client_section .container .slider-control a {
-  display: inline-block;
-  text-decoration: none;
-  width: 50px;
-  color: white;
-  font-size: 45px;
+@media only screen and (min-width: 768px) {
+  #client_section .container .client_list_slider {
+    height: 420px;
+  }
+}
+#client_section .container .client_list_slider .slider-container {
+  width: 100%;
+  text-align: center;
+  cursor: grab;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  #client_section .container .client_list_slider .slider-container {
+    max-width: 475px;
+  }
+}
+#client_section .container .client_list_slider .slider-container img {
+  width: 100%;
+  max-width: 120px;
+}
+@media only screen and (min-width: 768px) {
+  #client_section .container .client_list_slider .slider-container img {
+    max-width: 150px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #client_section .container .client_list_slider .slider-container img {
+    max-width: 120px;
+  }
+}
+#client_section .container .client_list_slider .slider-container .para {
+  margin-top: 15px;
+}
+@media only screen and (min-width: 768px) {
+  #client_section .container .client_list_slider .slider-container .para {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #client_section .container .client_list_slider .slider-container .para {
+    text-align: left;
+  }
+}
+#client_section .container .client_list_slider .slider-container .name {
+  font-size: 22px;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  #client_section .container .client_list_slider .slider-container .name {
+    margin-top: 15px;
+    font-size: 24px;
+  }
+}
+#client_section .container .client_list_slider .slider-container .title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  #client_section .container .client_list_slider .slider-container .title {
+    font-size: 18px;
+  }
+}
+#client_section .container .client_list_slider .slider-btn {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  #client_section .container .client_list_slider .slider-btn {
+    display: block;
+    color: white;
+    top: initial;
+    right: initial;
+    bottom: 0px;
+    left: initial;
+  }
+}
+#client_section .container .client_list_slider .swiper-button-prev {
+  left: 40%;
+}
+#client_section .container .client_list_slider .swiper-button-next {
+  right: 40%;
+}
+@media only screen and (min-width: 992px) {
+  #client_section .container .client_list_slider .swiper-pagination {
+    display: none;
+  }
 }
 
 #motocycle_list {
@@ -839,7 +894,7 @@ p, h1, h2, h3, h4, h5, h6, .heading, #footer .container h5, #contact .container 
 @media only screen and (min-width: 992px) {
   #motocycle_list .container .bike-list-slider .swiper-btn {
     display: block;
-    color: white;
+    color: #ce0000;
     font-weight: bold;
     font-size: 45px;
     top: 40%;
